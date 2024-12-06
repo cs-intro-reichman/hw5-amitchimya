@@ -65,6 +65,7 @@ public class Scrabble {
 			int index = word.charAt(i) - 'a';
 			sum = sum + SCRABBLE_LETTER_VALUES[index];
 		}
+		sum = sum * word.length();
 		if (word.length()==HAND_SIZE) {
 			sum = sum + 50;
 		}
